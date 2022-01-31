@@ -1,3 +1,4 @@
+:root
 body {
   background-color: ffffff;
   color: 757575;
@@ -11,6 +12,39 @@ body {
 /* цвет белый FFFFFF*/
 /* цвет белый 757575*/
 /* цвет акцент 2196F3 */
+/* цвет бекграунд шапка 2F303A */
 .logo {
   color: #2196f3;
+}
+/*site-nav*/
+.site-nav {
+  color: #212121;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+.mail {
+  color: #757575;
+}
+.mail:hover,
+.mail:focus {
+  color: #2196f3;
+}
+.tel {
+  color: #757575;
+}
+/*Hero*/
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: #ffffff;
+}
+/*feature*/
+.feature-title .title {color:
+#212121:}
+/*section*/
+.section-title {
+  color: #212121;
 }
