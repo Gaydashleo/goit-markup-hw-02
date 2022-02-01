@@ -4,8 +4,9 @@
   --accent-color: #2196f3;
   --button-text-color: #ffffff;
   --primary-bg-color: #ffffff;
-  --section-bg-color: F5F4FA;
-  --banner-bg-color: 2f303a;
+  --section-bg-color: #f5f4fa;
+  --banner-bg-color: #2f303a;
+  --footer-mt-color: rgba(255, 255, 255, 0.6);
 }
 body {
   background-color: ffffff;
@@ -37,7 +38,7 @@ body {
 }
 /*Hero*/
 .hero {
-  background-color: #2f303a;
+  background-color: var(--banner-bg-color);
 }
 .hero-title {
   color: #ffffff;
@@ -47,13 +48,24 @@ body {
   color: var(--button-text-color);
 }
 /*feature*/
-.feature-list {
-  feature-list-style: none;
-}
 .feature-list .title {
   color: var(--title-text-color);
 }
 /*section*/
 .section-title {
   color: var(--title-text-color);
+}
+/*Our team*/
+.card-title {
+  color: var(--title-text-color);
+}
+/*Footer*/
+.footer {
+  background-color: var(--banner-bg-color);
+}
+.address {
+  color: var(--button-text-color);
+}
+ {
+  color: var(--footer-mt-color);
 }
