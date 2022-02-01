@@ -1,38 +1,39 @@
-:root
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --button-text-color: #ffffff;
+  --primary-bg-color: #ffffff;
+  --section-bg-color: F5F4FA;
+  --banner-bg-color: 2f303a;
+}
 body {
   background-color: ffffff;
-  color: 757575;
+  color: var(--primary-text-color);
 }
 .list {
   list-style: none;
 }
-/* цвет основного текста 757575*/
-
-/* цвет вторичный 212121*/
-/* цвет белый FFFFFF*/
-/* цвет белый 757575*/
-/* цвет акцент 2196F3 */
-/* цвет бекграунд шапка 2F303A */
 .logo {
-  color: #2196f3;
+  color: var(---accent-color);
 }
 /*site-nav*/
 .site-nav {
-  color: #212121;
+  color: var(--title-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(---accent-color);
 }
 .mail {
-  color: #757575;
+  color: var(--primary-text-color);
 }
 .mail:hover,
 .mail:focus {
-  color: #2196f3;
+  color: var(---accent-color);
 }
 .tel {
-  color: #757575;
+  color: var(--primary-text-color);
 }
 /*Hero*/
 .hero {
@@ -41,10 +42,18 @@ body {
 .hero-title {
   color: #ffffff;
 }
+.button {
+  background-color: var(--accent-color);
+  color: var(--button-text-color);
+}
 /*feature*/
-.feature-title .title {color:
-#212121:}
+.feature-list {
+  feature-list-style: none;
+}
+.feature-list .title {
+  color: var(--title-text-color);
+}
 /*section*/
 .section-title {
-  color: #212121;
+  color: var(--title-text-color);
 }
