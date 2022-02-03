@@ -7,6 +7,7 @@
   --section-bg-color: #f5f4fa;
   --banner-bg-color: #2f303a;
   --footer-mt-color: rgba(255, 255, 255, 0.6);
+  --logo-color: #000000;
 }
 body {
   background-color: ffffff;
@@ -16,7 +17,10 @@ body {
   list-style: none;
 }
 .logo {
-  color: var(---accent-color);
+  color: var(--logo-color);
+}
+.accent {
+  color: var(--accent-color);
 }
 /*site-nav*/
 .site-nav {
