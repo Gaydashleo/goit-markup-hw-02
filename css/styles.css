@@ -12,11 +12,12 @@
 body {
   background-color: ffffff;
   color: var(--primary-text-color);
+  font-family: Roboto;
 }
 .list {
   list-style: none;
 }
-.logo {
+.logo-top {
   color: var(--logo-color);
 }
 .accent {
@@ -26,19 +27,22 @@ body {
 .site-nav {
   color: var(--title-text-color);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(---accent-color);
+.nav-link:active {
+  color: var(--accent-color);
 }
-.mail {
+.mail-top {
   color: var(--primary-text-color);
 }
-.mail:hover,
-.mail:focus {
-  color: var(---accent-color);
+.mail-top:hover,
+.mail-top:focus {
+  color: var(--accent-color);
 }
-.tel {
+.tel-top {
   color: var(--primary-text-color);
+}
+.tel-top:hover,
+.tel-top:focus {
+  color: var(--accent-color);
 }
 /*Hero*/
 .hero {
@@ -52,14 +56,15 @@ body {
   color: var(--button-text-color);
 }
 /*feature*/
-.feature-list .title {
+.feature-title {
   color: var(--title-text-color);
-}
+
 /*section*/
 .section-title {
-  color: var(--title-text-color);
-}
+  color:var(--title-text-color)}
+
 /*Our team*/
+.team-title {color:var(--title-text-color)}
 .card-title {
   color: var(--title-text-color);
 }
