@@ -6,7 +6,7 @@
   --primary-bg-color: #ffffff;
   --section-bg-color: #f5f4fa;
   --banner-bg-color: #2f303a;
-  --footer-mt-color: rgba(255, 255, 255, 0.6);
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
   --logo-color: #000000;
 }
 body {
@@ -58,23 +58,36 @@ body {
 /*feature*/
 .feature-title {
   color: var(--title-text-color);
-
-/*section*/
+}
+/*our job*/
 .section-title {
-  color:var(--title-text-color)}
-
-/*Our team*/
-.team-title {color:var(--title-text-color)}
-.card-title {
   color: var(--title-text-color);
 }
-/*Footer*/
-.footer {
+/*our team*/
+.surname {
+  color: var(--title-text-color);
+}
+/*footer*/
+.basement {
   background-color: var(--banner-bg-color);
 }
-.address {
+.basement-logo {
   color: var(--button-text-color);
 }
- {
-  color: var(--footer-mt-color);
+.basement-address {
+  color: var(--button-text-color);
+}
+.mail-basement {
+  color: var(--footer-contact-color);
+}
+.mail-basement:hover,
+.mail-basement:focus {
+  color: var(--accent-color);
+}
+.tel-basement {
+  color: var(--footer-contact-color);
+}
+.tel-basement:hover,
+.tel-basement:focus {
+  color: var(--accent-color);
 }
