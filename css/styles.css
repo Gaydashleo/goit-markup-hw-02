@@ -8,30 +8,55 @@
   --banner-bg-color: #2f303a;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --logo-color: #000000;
+  --button-hover-color: #188ce8;
 }
 body {
   background-color: ffffff;
   color: var(--primary-text-color);
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+h1,
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Roboto, sans-serif;
 }
 .list {
   list-style: none;
 }
 .logo-top {
   color: var(--logo-color);
+  font-family: Raleway, serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
 }
 .accent {
   color: var(--accent-color);
 }
 /*site-nav*/
-.site-nav {
+.site-nav .nav-link {
   color: var(--title-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .nav-link:active {
   color: var(--accent-color);
 }
 .mail-top {
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .mail-top:hover,
 .mail-top:focus {
@@ -39,6 +64,7 @@ body {
 }
 .tel-top {
   color: var(--primary-text-color);
+  letter-spacing: 0.02em;
 }
 .tel-top:hover,
 .tel-top:focus {
@@ -49,19 +75,49 @@ body {
   background-color: var(--banner-bg-color);
 }
 .hero-title {
-  color: #ffffff;
+  color: var(--button-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
-.button {
+.button-hero:hover,
+.button-hero:focus {
   background-color: var(--accent-color);
   color: var(--button-text-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 /*feature*/
 .feature-title {
   color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
+.feature-list p {
+  color: var(--primary-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
 /*our job*/
 .section-title {
   color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
 }
 /*our team*/
 .section-team {
@@ -69,9 +125,19 @@ body {
 }
 .card-title {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .card-title p {
   color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.19px;
+  /* identical to box height */
+  text-align: center;
 }
 /*footer*/
 .basement {
@@ -79,9 +145,18 @@ body {
 }
 .basement-logo {
   color: var(--button-text-color);
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
 }
 .basement-address {
   color: var(--button-text-color);
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
 }
 .mail-basement {
   color: var(--footer-contact-color);
@@ -102,6 +177,13 @@ body {
 .button {
   background-color: var(--section-bg-color);
   color: var(--title-text-color);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  /* identical to box height, or 162% */
+  text-align: center;
 }
 .all-button:active {
   background-color: var(--accent-color);
