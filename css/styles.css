@@ -19,15 +19,6 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Roboto, sans-serif;
-  color: var(--title-text-color);
-}
 .list {
   list-style: none;
 }
@@ -106,6 +97,7 @@ h6 {
 }
 
 .button-hero {
+  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -127,13 +119,15 @@ h6 {
 /*======= OUR FEATURE =======*/
 
 .feature-title {
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  color: var(--title-text-color);
 }
 .description {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -141,10 +135,13 @@ h6 {
 
 /*======= OUR JOB START =======*/
 .job-title {
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  color: var(--title-text-color);
 }
 /*======= OUR JOB END =======*/
 /*======= OUR TEAM START======= */
@@ -153,10 +150,13 @@ h6 {
 }
 
 .team-title {
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  color: var(--title-text-color);
 }
 
 .card-team-title {
@@ -165,10 +165,11 @@ h6 {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+
+  color: var(--title-text-color);
 }
 
 .under-card-team-title {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -217,7 +218,8 @@ h6 {
 
 /*======= PORTFOLIO =======  */
 /*======= FILTERS ======= */
-.button {
+button {
+  cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -230,3 +232,21 @@ h6 {
   background-color: var(--accent-color);
   color: var(--button-text-color);
 }
+/*======= FILTERS END ======= */
+/*======= PROJECT ======= */
+.card-project-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
+.under-card-project-title {
+  font-size: 16px;
+  line-height: 1.88;
+
+  color: var(--primary-text-color);
+}
+/*======= PROJECT END ======= */
