@@ -4,10 +4,12 @@
   --accent-color: #2196f3;
   --button-text-color: #ffffff;
   --primary-bg-color: #ffffff;
-  --section-bg-color: #f5f4fa;
-  --banner-bg-color: #2f303a;
+  --secondary-bg-color: #f5f4fa;
+  --section-bg-dark: #2f303a;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
-  --logo-color: #000000;
+  --footer-address-color: #ffffff;
+  --top-logo-color: #000000;
+  --footer-logo-color: #ffffff;
   --button-hover-color: #188ce8;
 }
 body {
@@ -17,17 +19,18 @@ body {
   letter-spacing: 0.03em;
 }
 h1,
-h1,
+h2,
 h3,
 h4,
 h5,
 h6 {
   font-family: Roboto, sans-serif;
+  color: var(--title-text-color);
 }
 .list {
   list-style: none;
 }
-/*=======TOP LINE =======*/
+/*=======TOP LINE START=======*/
 .logo-top {
   font-family: Raleway, serif;
   font-weight: bold;
@@ -35,7 +38,7 @@ h6 {
   line-height: 1.2;
   text-decoration: none;
 
-  color: var(--logo-color);
+  color: var(--top-logo-color);
 }
 
 .accent {
@@ -43,7 +46,7 @@ h6 {
 }
 
 .site-nav .nav-link {
-  font-style: 400;
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -52,11 +55,12 @@ h6 {
 
   color: var(--title-text-color);
 }
+
 .nav-link:active {
   color: var(--accent-color);
 }
-.text {
-  font-style: 400;
+.nav-text {
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -71,6 +75,7 @@ h6 {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .mail-top:hover,
 .mail-top:focus {
@@ -79,103 +84,131 @@ h6 {
 .tel-top {
   color: var(--primary-text-color);
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .tel-top:hover,
 .tel-top:focus {
   color: var(--accent-color);
 }
-/*======= TOP LINE =======*/
+/*======= TOP LINE END=======*/
 
-/*======= HERO =======*/
+/*======= HERO CTART =======*/
 .hero {
-  background-color: var(--banner-bg-color);
+  background-color: var(--section-bg-dark);
 }
 .hero-title {
   color: var(--button-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* or 136% */
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.button-hero:hover,
-.button-hero:focus {
-  background-color: var(--accent-color);
-  color: var(--button-text-color);
-  font-weight: bold;
+
+.button-hero {
+  font-style: normal;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 187% */
+  line-height: 1.88;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+
+  background-color: var(--accent-color);
+  color: var(--button-text-color);
 }
-/*feature*/
+
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--button-hover-color);
+}
+/*======= HERO END=======*/
+
+/*======= OUR FEATURE =======*/
+
 .feature-title {
-  color: var(--title-text-color);
-  font-weight: bold;
+  font-style: normal;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
-.feature-list p {
-  color: var(--primary-text-color);
+.description {
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
+/*======= OUR FEATURE END=======*/
 
-/*our job*/
-.section-title {
-  color: var(--title-text-color);
-  font-weight: bold;
+/*======= OUR JOB START =======*/
+.job-title {
+  font-style: normal;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.17;
   text-align: center;
 }
-/*our team*/
-.section-team {
-  background-color: var(--section-bg-color);
+/*======= OUR JOB END =======*/
+/*======= OUR TEAM START======= */
+.team-list {
+  background-color: var(--secondary-bg-color);
 }
-.card-title {
-  color: var(--title-text-color);
+
+.team-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.card-team-title {
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  /* identical to box height */
   text-align: center;
-  letter-spacing: 0.03em;
 }
-.card-title p {
-  color: var(--primary-text-color);
+
+.under-card-team-title {
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 1.19px;
-  /* identical to box height */
+  line-height: 1.19;
   text-align: center;
+
+  color: var(--primary-text-color);
 }
-/*footer*/
+/*======= OUR TEAM END======= */
+
+/*======= FOOTER START======= */
 .basement {
-  background-color: var(--banner-bg-color);
+  background-color: var(--section-bg-dark);
 }
 .basement-logo {
-  color: var(--button-text-color);
   font-family: Raleway;
-  font-weight: bold;
+  font-style: normal;
+  font-weight: b700;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
+
+  color: var(--footer-logo-color);
 }
 .basement-address {
-  color: var(--button-text-color);
-
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+
+  color: var(--footer-address-color);
 }
 .mail-basement {
   color: var(--footer-contact-color);
+  text-decoration: none;
 }
 .mail-basement:hover,
 .mail-basement:focus {
@@ -183,12 +216,15 @@ h6 {
 }
 .tel-basement {
   color: var(--footer-contact-color);
+  text-decoration: none;
 }
 .tel-basement:hover,
 .tel-basement:focus {
   color: var(--accent-color);
 }
-/*portfolio*/
+/*======= FOOTER END======= */
+
+/*portfolio */
 /*filters*/
 .button {
   background-color: var(--section-bg-color);
